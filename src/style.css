@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: purple;
+  text-align: center;
+}
+h2 {
+  text-align: center
+}
+
+.Page-Header{ /* This is the class for the header, used to adjust spacing and presentation */
+  display: flex;
+  justify-content: space-around;
+}
+.Header-Buttons{ /* This is the class for the buttons, used to adjust spacing and presentation */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px
+}
