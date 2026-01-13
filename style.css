@@ -1,27 +1,44 @@
 html {
   height: 100%;
   width: 100%;
+  /*cursor: url('assets/images/cursor.png'), auto;*/
 }
 
 body {
-  background-color: lightblue;
+  background-color: rgb(155, 199, 174);
 }
 
 h1 {
-  color: purple;
+  color: rgb(178, 62, 110);
   text-align: center;
 }
+
 h2 {
-  text-align: center
+  text-align: center;
 }
 
-.Page-Header{ /* This is the class for the header, used to adjust spacing and presentation */
+.Bio {
+  margin: 0px 20px 20px 20px;
+  padding: 10px;
+  border: 2px solid rgb(97, 5, 5);
+  border-radius: 10px;
+  background-color: rgb(255, 240, 245);
+}
+
+.Page-Header { 
   display: flex;
   justify-content: space-around;
 }
-.Header-Buttons{ /* This is the class for the buttons, used to adjust spacing and presentation */
+
+.Header-Buttons {
   display: flex;
+  gap: 1rem;
   justify-content: space-around;
   align-items: center;
-  height: 200px
+  flex-wrap: wrap;
+  height: 200px;
 }
+
+/*button {
+  cursor: url('assets/images/button-cursor.png'), url('assets/images/button-cursor.png'), pointer;
+}*/
