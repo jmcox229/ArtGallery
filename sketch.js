@@ -13,5 +13,9 @@ function setup() {
 }
 
 function mouseDragged() {
+      if (!bottomImg){
+        return;
+      }
   copy(bottomImg, mouseX, mouseY, 20, 20, mouseX, mouseY, 20, 20);
 }
+
