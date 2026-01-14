@@ -8,7 +8,25 @@
   <title>juliette's art gallery</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
   <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
-  <script src="./sketch.js"></script>
+<!--- <script src="./sketch.js"></script> --->
+
+<script>
+let bottomImg, topImg;
+
+function preload() {
+  bottomImg = loadImage('assets/images/bear-knight.jpeg');
+  topImg = loadImage('assets/images/dog.jpeg');
+}
+function setup() {
+  createCanvas(720, 400);
+  image(topImg, 0, 0);
+}
+
+function mouseDragged() {
+  copy(bottomImg, mouseX, mouseY, 20, 20, mouseX, mouseY, 20, 20);
+}
+</script>
+
 </head>
 
 <body>
