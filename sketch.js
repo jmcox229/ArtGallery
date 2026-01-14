@@ -7,7 +7,9 @@ function preload() {
 }
 function setup() {
   createCanvas(720, 400);
-  image(topImg, 0, 0);
+  if(topImg){
+    image(topImg, 0, 0);
+  }
 }
 
 function mouseDragged() {
