@@ -5,38 +5,120 @@ html {
 }
 
 body {
-  background-color: rgb(155, 199, 174);
+  margin: 0;
+  background-image: url('assets/images/wallbackground.jpg');
+  background-repeat: repeat-y;  
+  background-size: auto;      
+  background-position: top center;
+  background-size: cover;
+  min-height: 100vh;
 }
-
+/*
 h1 {
+  font-size: 40px;
+  /*font-family: 'Lucida Handwriting', cursive;
+  font-family: 
   color: rgb(178, 62, 110);
   text-align: center;
-}
+}*/
 
 h2 {
   text-align: center;
+  font-family: 'courier new', courier, monospace;
+  font-size: 21px;
+  color: rgb(rgb(122, 100, 148));
 }
 
 .Bio {
   margin: 0px 20px 20px 20px;
   padding: 10px;
-  border: 2px solid rgb(97, 5, 5);
-  border-radius: 10px;
-  background-color: rgb(255, 240, 245);
+  border: 2px solid rgb(14, 68, 99);
+  border-radius: 20px;
+  aspect-ratio: 20/1;
+  background-color: rgb(161, 230, 218);
+  padding: 50px;
 }
 
 .Page-Header { 
-  display: flex;
-  justify-content: space-around;
+  background-image: url('assets/images/artGalleryBackgroundImage.png');
+  background-repeat: no-repeat;
+    background-size: contain;
+  background-position: center;
+  aspect-ratio: 20/6;
+  width: 100%;
 }
 
-.Header-Buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 200px;
+.Gallery-Buttons {
+  position: relative; 
+  height: 1800px; 
+}
+
+.Gallery-Buttons button {
+  position: absolute;   
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.Gallery-Buttons button img {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  display: block;
+}
+
+.Gallery-Buttons button:hover img {
+  transform: scale(1.05);
+}
+
+.royalCat-Button {
+  top: 50px;
+  left: 40%;
+}
+
+.seaHorse-Button {
+  top: 250px;
+  left: 15%;
+}
+
+.dog-Button {
+  top: 500px;
+  left: 20%;
+}
+
+.goslings-Button {
+  top: 700px;
+  left: 45%;
+}
+
+.bear-Button {
+  top: 1000px;
+  left: 55%;
+}
+
+.coloringbook-Button {
+  top: 1500px;
+  left: 20%;
+}
+
+.percy-Button {
+  top: 1130px;
+  left: 25%;
+}
+
+.panda-Button {
+  top: 1600px;
+  left: 60%;
+}
+.ralphie-Button {
+  top: 500px;
+  left: 65%;
+}
+
+.music-Embed {
+  margin-top: 20px;
+  text-align: center;
 }
 
 /*button {

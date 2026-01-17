@@ -9,55 +9,68 @@
   <link href="style.css" rel="stylesheet" type="text/css"/>
   <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
   <script src="./sketch.js"></script>
-
 </head>
 
 <body>
   <div class="Page-Header">
-  <h1>Juliette's Art Gallery</h1>
 </div>  
 
 <div class="Bio">
   <h2>welcome to my art gallery! here you will find a collection of my favorite artworks i have made!</h2>
+  <h2>they are interactive! just click on a painting to paint it yourself!</h2>
 </div>
 
-<div class="Header-Buttons">
-    <button type="button">
-      <img src="assets/images/seahorse.jpeg" alt="seahorse" width="350">
-    </button>
+<div class="Gallery-Buttons">
 
-    <button type="button">
-      <img src="assets/images/bear-knight.jpeg" alt="bear knight" width="150">
-    </button>
+  <button class="royalCat-Button" onclick="location.href='royalcats.html'">
+    <img src="assets/images/royalcats.jpeg" width="200">
+  </button>
 
-    <button type="button">
-      <img src="assets/images/dog.jpeg" alt="dog" width="200">
-    </button>
+  <button class="seaHorse-Button" onclick="location.href='seahorse.html'">
+    <img src="assets/images/seahorse.jpeg" width="200">
+  </button>
 
-    <button type="button">
-      <img src="assets/images/goslings.jpeg" alt="goslings" width="200">
-    </button>
+  <button class="goslings-Button" onclick="location.href='goslings.html'">
+    <img src="assets/images/goslings.jpeg" width="200">
+  </button>
 
-    <button type="button">
-      <img src="assets/images/critter-coloring-book.jpeg" alt="critters" width="200">
-    </button>
+  <button class="dog-Button" onclick="location.href='dog.html'">
+    <img src="assets/images/dog.jpeg" width="200">
+  </button>
 
-    <button type="button"> 
-      <img src="assets/images/panda.jpeg" alt="panda" width="200">
-    </button>
+  <button class="bear-Button" onclick="location.href='bear-knight.html'">
+    <img src="assets/images/bear-knight.jpeg" width="200">
+  </button>
 
-    <button type="button">
-      <img src="assets/images/percy.jpeg" alt="percy" width="200">
-    </button>
+  <button class="coloringbook-Button" onclick="location.href='critter-coloring-book.html'">
+    <img src="assets/images/critter-coloring-book.jpeg" width="200">
+  </button>
 
-    <button type="button">
-      <img src="assets/images/ralphie.jpeg" alt="ralphie" width="200">
-    </button>
+  <button class="percy-Button" onclick="location.href='percy.html'">
+    <img src="assets/images/percy.jpeg" width="200">
+  </button>
 
-    <button type="button">
-      <img src="assets/images/royalcats.jpeg" alt="royalcats" width="200">
-    </button>
+  <button class="panda-Button" onclick="location.href='panda.html'">
+    <img src="assets/images/panda.jpeg" width="200">
+  </button>
+
+  <button class="ralphie-Button" onclick="location.href='ralphie.html'">
+    <img src="assets/images/ralphie.jpeg" width="200">
+  </button>
+
 </div>
+
 </body>
+
+<div class="Music-Embed">
+  <h2>here is some music i like to listen to while i create art!</h2>
+<iframe data-testid="embed-iframe" style="border-radius:12px" 
+src="https://open.spotify.com/embed/track/048AQ5XBnvStuTn7X2pGSY?utm_source=generator" 
+width="50%" height="100" frameBorder="150" allowfullscreen="" 
+align="middle";
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+loading="lazy">
+</iframe>
+</div>
 
 </html>
