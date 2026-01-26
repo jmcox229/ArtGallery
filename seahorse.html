@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>juliette's art gallery</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+
+  <script>
+  let bottomImg, topImg;
+
+  function preload() {
+    bottomImg = loadImage('assets/images/paintings/seahorse.jpeg'); 
+    topImg = loadImage('assets/images/paintings/seahorse-modified.jpeg'); 
+  }
+
+ function setup() {
+  createCanvas(500, 375);
+  noCursor();
+  cursor('assets/images/cursor.cur', 20, -10);
+
+  image(topImg, 0, 0, 500, 375);
+}
+
+ function mouseDragged() {
+  copy(bottomImg, mouseX, mouseY, 40, 40, mouseX, mouseY, 40, 40);
+}
+
+
+
+ /*function mouseDragged() {
+    copy(
+      bottomImg,
+      mouseX,
+      mouseY,
+      40,
+      40,
+      mouseX,
+      mouseY,
+      40,
+      40
+    );
+  }*/
+
+</script>
+</head>
+
+
+
+
+<body>
+</body>
+</html>
+
+
+ 
