@@ -1,0 +1,204 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  background-image: url('assets/images/backgrounds/background.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: none;
+
+}
+
+/*fixing scroll issue*/
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*
+h1 {
+  font-size: 40px;
+  /*font-family: 'Lucida Handwriting', cursive;
+  font-family: 
+  color: rgb(178, 62, 110);
+  text-align: center;
+}*/
+
+h2 {
+  text-align: center;
+  font-family: 'courier new', courier, monospace;
+  font-size: 21px;
+  top: 50%;
+}
+
+.Bio {
+  background-image: url('assets/images/webImages/artGalleryBioImage.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0px 0px 40px 40px;
+  aspect-ratio: 2;
+  background-position: 65% 50%;
+  padding: 10px;
+  width: 80%;
+}
+
+.Page-Header {
+  background-image: url('assets/images/webImages/artGalleryHeaderImage.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  aspect-ratio: 3;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.gallery-frame-royalCat {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-125px, -142px);
+}
+
+.gallery-frame-seaHorse {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-74px, -173px);
+}
+
+.gallery-frame-goslings {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-75px, -150px);
+}
+
+.gallery-frame-bear {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-74px, -173px);
+}
+
+.gallery-frame-dog {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-114px, -175px);
+}
+
+.gallery-frame-percy {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-74px, -100px);
+}
+
+.gallery-frame-ralphie {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-74px, -173px);
+}
+
+.gallery-frame-panda {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-100px, -200px);
+}
+
+
+.Gallery-Buttons {
+  position: relative;
+  height: 1800px;
+}
+
+.Gallery-Buttons button {
+  position: absolute;
+  background-image: url('assets/images/frames/websiteFrame.png');
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.Gallery-Buttons button img {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  display: block;
+}
+
+.Gallery-Buttons button:hover img {
+  transform: scale(1.03);
+}
+
+.royalCat-Button {
+  top: 50px;
+  left: 40%;
+}
+
+.seaHorse-Button {
+  top: 120px;
+  left: 5%;
+}
+
+.dog-Button {
+  top: 545px;
+  left: 11%;
+}
+
+.goslings-Button {
+  top: 700px;
+  left: 37%;
+}
+
+.bear-Button {
+  top: 1100px;
+  left: 63%;
+}
+
+.coloringbook-Button {
+  top: 1500px;
+  left: 20%;
+}
+
+.percy-Button {
+  top: 1080px;
+  left: 13%;
+}
+
+.panda-Button {
+  top: 1600px;
+  left: 60%;
+}
+
+.ralphie-Button {
+  top: 580px;
+  left: 68%;
+}
+
+.music-Embed {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+/*button {
+  cursor: url('assets/images/button-cursor.png'), url('assets/images/button-cursor.png'), pointer;
+}*/
