@@ -6,7 +6,7 @@
   <title>juliette's art gallery</title>
 
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
 
   <script>
   let bottomImg, topImg;
@@ -24,32 +24,17 @@
   image(topImg, 0, 0, 500, 375);
 }
 
- function mouseDragged() {
-  copy(bottomImg, mouseX, mouseY, 40, 40, mouseX, mouseY, 40, 40);
+function mouseDragged() {
+  let size = 40;
+  let srcX = mouseX * bottomImg.width / width - size/2;
+  let srcY = mouseY * bottomImg.height / height - size/2;
+  let srcW = size * bottomImg.width / width;
+  let srcH = size * bottomImg.height / height;
+  copy(bottomImg, srcX, srcY, srcW, srcH, mouseX - size/2, mouseY - size/2, size, size);
 }
-
-
-
- /*function mouseDragged() {
-    copy(
-      bottomImg,
-      mouseX,
-      mouseY,
-      40,
-      40,
-      mouseX,
-      mouseY,
-      40,
-      40
-    );
-  }*/
 
 </script>
 </head>
-
-
-
-
 <body>
 </body>
 </html>
